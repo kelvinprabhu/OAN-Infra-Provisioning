@@ -2,7 +2,7 @@
 
 > Terraform-based Infrastructure Provisioning across multi-cloud and self-hosted environments.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 OAN-Infra-Provisioning/
@@ -41,7 +41,7 @@ OAN-Infra-Provisioning/
 └── .github/workflows/          # CI/CD pipelines
 ```
 
-## 🌍 Environments
+## Environments
 
 | Environment | Purpose                              |
 |-------------|--------------------------------------|
@@ -51,7 +51,7 @@ OAN-Infra-Provisioning/
 | `staging`   | Pre-production mirror                |
 | `prod`      | Production (protected)               |
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Terraform >= 1.6.x
@@ -67,7 +67,7 @@ terraform plan -var-file="terraform.tfvars"
 terraform apply -var-file="terraform.tfvars"
 ```
 
-## 🔐 Secrets Management
+## Secrets Management
 
 Secrets are **never committed** to Git. See `shared/secrets/README.md` for patterns.
 
@@ -77,7 +77,7 @@ Supported backends:
 - **Azure**: Azure Key Vault
 - **Self-Hosted**: HashiCorp Vault
 
-## 📋 Conventions
+## Conventions
 
 - All resource names follow: `oan-{cloud}-{env}-{resource_type}-{name}`
 - Tags/Labels must include: `project`, `environment`, `managed_by=terraform`, `owner`
