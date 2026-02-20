@@ -1,0 +1,20 @@
+# ── Self-Hosted dev environment — EXAMPLE ONLY ────────────────
+# Copy to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to Git!
+# Sensitive values (passwords, tokens) should come from CI/CD env vars.
+
+vsphere_server               = "vcenter.oan.internal"
+vsphere_datacenter           = "DC-OAN"
+vsphere_cluster              = "CL-OAN-DEV"
+vsphere_datastore            = "DS-OAN-DEV"
+vm_template                  = "ubuntu-22-04-template"
+num_cpus                     = 4
+memory_mb                    = 8192
+instance_count               = 1
+vlan_id                      = 100
+subnet_cidr                  = "192.168.1.0/24"
+nfs_server                   = "nfs.oan.internal"
+nfs_path                     = "/exports/oan-dev"
+vault_address                = "https://vault.oan.internal:8200"
+tf_backend_address           = "https://tf-backend.oan.internal/state/oan-self-hosted-dev"
+owner                        = "platform-team@oan.io"

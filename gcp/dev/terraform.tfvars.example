@@ -1,0 +1,12 @@
+# ── GCP dev environment — EXAMPLE ONLY ──────────────────────
+# Copy to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to Git!
+
+gcp_project_id = "oan-gcp-dev-000000"
+gcp_region     = "us-central1"
+owner          = "platform-team@oan.io"
+subnet_cidr    = "10.10.0.0/20"
+machine_type   = "n1-standard-1"
+instance_count = 1
+database_tier  = "db-f1-micro"
+db_name        = "oandb"

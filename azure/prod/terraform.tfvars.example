@@ -1,0 +1,12 @@
+# ── Azure prod environment — EXAMPLE ONLY ─────────────────────
+# Copy to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to Git!
+
+subscription_id = "00000000-0000-0000-0000-000000000000"
+azure_location  = "East US"
+owner           = "platform-team@oan.io"
+vnet_cidr       = "10.24.0.0/16"
+vm_size         = "Standard_D8s_v3"
+instance_count  = 5
+db_sku          = "MO_Gen5_8"
+db_name         = "oandb"

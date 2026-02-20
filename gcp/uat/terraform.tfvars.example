@@ -1,0 +1,12 @@
+# ── GCP uat environment — EXAMPLE ONLY ──────────────────────
+# Copy to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to Git!
+
+gcp_project_id = "oan-gcp-uat-000000"
+gcp_region     = "us-central1"
+owner          = "platform-team@oan.io"
+subnet_cidr    = "10.12.0.0/20"
+machine_type   = "n1-standard-2"
+instance_count = 2
+database_tier  = "db-n1-standard-1"
+db_name        = "oandb"

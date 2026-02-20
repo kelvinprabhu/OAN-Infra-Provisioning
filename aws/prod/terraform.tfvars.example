@@ -1,0 +1,11 @@
+# ── AWS prod environment — EXAMPLE ONLY ──────────────────────
+# Copy to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to Git!
+
+aws_region        = "us-east-1"
+owner             = "platform-team@oan.io"
+vpc_cidr          = "10.4.0.0/16"
+instance_type     = "m5.xlarge"
+instance_count    = 5
+db_instance_class = "db.r6g.large"
+db_name           = "oandb"

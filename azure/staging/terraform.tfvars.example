@@ -1,0 +1,12 @@
+# ── Azure staging environment — EXAMPLE ONLY ─────────────────────
+# Copy to terraform.tfvars and fill in real values.
+# NEVER commit terraform.tfvars to Git!
+
+subscription_id = "00000000-0000-0000-0000-000000000000"
+azure_location  = "East US"
+owner           = "platform-team@oan.io"
+vnet_cidr       = "10.23.0.0/16"
+vm_size         = "Standard_D4s_v3"
+instance_count  = 3
+db_sku          = "GP_Gen5_4"
+db_name         = "oandb"
